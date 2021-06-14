@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Pruebas CSS</title>
+    <link rel="stylesheet" href="css/ejemplo_10.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+			$(document).ready(function(){
+				set_initial_panel();
+				$("#qs").click(function(){
+					$('#Quienes_somos').show();
+					$('#que_hacemos').hide();
+					$('#manual_uso').hide();
+					$('#hablamos').hide();
+				 });
+
+				$("#qh").click(function(){
+					$("#Quienes_somos").hide();
+					$("#que_hacemos").show();
+					$("#manual_uso").hide();
+					$("#hablamos").hide();
+				});
+				$("#mds").click(function(){
+					$("#Quienes_somos").hide();
+					$("#que_hacemos").hide();
+					$("#manual_uso").show();
+					$("#hablamos").hide();
+				});
+				$("#h").click(function(){
+					$("#Quienes_somos").hide();
+					$("#que_hacemos").hide();
+					$("#manual_uso").hide();
+					$("#hablamos").show();
+				});
+				
+				$("#li_inicio").click(function(){
+					$("#d_inicio").show();
+					$("#sm_inicio").show();
+					$("#d_login").hide();
+					$("#sm_login").hide();
+					$("#d_datos_empresa").hide();
+					$("#sm_datos_empresa").hide();
+					$("#d_datos_empleados").hide();
+					$("#d_tipo_de_turno").hide();
+					$("#d_dia_y_hora").hide();
+					$("#d_turnos").hide();
+					$("#d_nomina").hide();
+					$("#d_informes").hide();
+					$("#d_festivos").hide();
+					$("#sm_datos_empleados").hide();
+					$("#sm_tipo_de_turno").hide();
+					$("#sm_dia_y_hora").hide();
+					$("#sm_turnos").hide();
+					$("#sm_nomina").hide();
+					$("#sm_informes").hide();
+					$("#sm_festivos").hide();
+				});
+				$("#li_login").click(function(){
+					$("#d_inicio").hide();
+					$("#sm_inicio").hide();
+					$("#d_login").show();
+					$("#sm_login").show();
+					$("#d_datos_empresa").hide();
+					$("#sm_datos_empresa").hide();
+					$("#d_datos_empleados").hide();
+					$("#d_tipo_de_turno").hide();
+					$("#d_dia_y_hora").hide();
+					$("#d_turnos").hide();
+					$("#d_nomina").hide();
+					$("#d_informes").hide();
+					$("#d_festivos").hide();
+					$("#sm_datos_empleados").hide();
+					$("#sm_tipo_de_turno").hide();
+					$("#sm_dia_y_hora").hide();
+					$("#sm_turnos").hide();
+					$("#sm_nomina").hide();
+					$("#sm_informes").hide();
+					$("#sm_festivos").hide();
+				});
+				$("#li_datos_empresa").click(function(){
+					$("#d_inicio").hide();
+					$("#sm_inicio").hide();
+					$("#d_login").hide();
+					$("#sm_login").hide();
+					$("#d_datos_empresa").show();
+					$("#sm_datos_empresa").show();
+					$("#d_datos_empleados").hide();
+					$("#d_tipo_de_turno").hide();
+					$("#d_dia_y_hora").hide();
+					$("#d_turnos").hide();
+					$("#d_nomina").hide();
+					$("#d_informes").hide();
+					$("#d_festivos").hide();
+					$("#sm_datos_empleados").hide();
+					$("#sm_tipo_de_turno").hide();
+					$("#sm_dia_y_hora").hide();
+					$("#sm_turnos").hide();
+					$("#sm_nomina").hide();
+					$("#sm_informes").hide();
+					$("#sm_festivos").hide();
+				});
+				$("#li_tipo_de_turno").click(function(){
+					$("#d_inicio").hide();
+					$("#sm_inicio").hide();
+					$("#d_login").hide();
+					$("#sm_login").hide();
+					$("#d_datos_empresa").hide();
+					$("#sm_datos_empresa").hide();
+					$("#d_datos_empleados").hide();
+					$("#d_tipo_de_turno").show();
+					$("#d_dia_y_hora").hide();
+					$("#d_turnos").hide();
+					$("#d_nomina").hide();
+					$("#d_informes").hide();
+					$("#d_festivos").hide();
+					$("#sm_datos_empleados").hide();
+					$("#sm_tipo_de_turno").show();
+					$("#sm_dia_y_hora").hide();
+					$("#sm_turnos").hide();
+					$("#sm_nomina").hide();
+					$("#sm_informes").hide();
+					$("#sm_festivos").hide();
+				});
+				$("#li_datos_empleados").click(function(){
+					$("#d_inicio").hide();
+					$("#sm_inicio").hide();
+					$("#d_login").hide();
+					$("#sm_login").hide();
+					$("#d_datos_empresa").hide();
+					$("#sm_datos_empresa").hide();
+					$("#d_datos_empleados").show();
+					$("#d_tipo_de_turno").hide();
+					$("#d_dia_y_hora").hide();
+					$("#d_turnos").hide();
+					$("#d_nomina").hide();
+					$("#d_informes").hide();
+					$("#d_festivos").hide();
+					$("#sm_datos_empleados").show();
+					$("#sm_tipo_de_turno").hide();
+					$("#sm_dia_y_hora").hide();
+					$("#sm_turnos").hide();
+					$("#sm_nomina").hide();
+					$("#sm_informes").hide();
+					$("#sm_festivos").hide();
+				});
+				$("#li_dia_y_hora").click(function(){
+					$("#d_inicio").hide();
+					$("#sm_inicio").hide();
+					$("#d_login").hide();
+					$("#sm_login").hide();
+					$("#d_datos_empresa").hide();
+					$("#sm_datos_empresa").hide();
+					$("#d_datos_empleados").hide();
+					$("#d_tipo_de_turno").hide();
+					$("#d_dia_y_hora").show();
+					$("#d_turnos").hide();
+					$("#d_nomina").hide();
+					$("#d_informes").hide();
+					$("#d_festivos").hide();
+					$("#sm_datos_empleados").hide();
+					$("#sm_tipo_de_turno").hide();
+					$("#sm_dia_y_hora").show();
+					$("#sm_turnos").hide();
+					$("#sm_nomina").hide();
+					$("#sm_informes").hide();
+					$("#sm_festivos").hide();
+				});
+				$("#li_turnos").click(function(){
+					$("#d_inicio").hide();
+					$("#sm_inicio").hide();
+					$("#d_login").hide();
+					$("#sm_login").hide();
+					$("#d_datos_empresa").hide();
+					$("#sm_datos_empresa").hide();
+					$("#d_datos_empleados").hide();
+					$("#d_tipo_de_turno").hide();
+					$("#d_dia_y_hora").hide();
+					$("#d_turnos").show();
+					$("#d_nomina").hide();
+					$("#d_informes").hide();
+					$("#d_festivos").hide();
+					$("#sm_datos_empleados").hide();
+					$("#sm_tipo_de_turno").hide();
+					$("#sm_dia_y_hora").hide();
+					$("#sm_turnos").show();
+					$("#sm_nomina").hide();
+					$("#sm_informes").hide();
+					$("#sm_festivos").hide();
+				});
+				$("#li_nomina").click(function(){
+					$("#d_inicio").hide();
+					$("#sm_inicio").hide();
+					$("#d_login").hide();
+					$("#sm_login").hide();
+					$("#d_datos_empresa").hide();
+					$("#sm_datos_empresa").hide();
+					$("#d_datos_empleados").hide();
+					$("#d_tipo_de_turno").hide();
+					$("#d_dia_y_hora").hide();
+					$("#d_turnos").hide();
+					$("#d_nomina").show();
+					$("#d_informes").hide();
+					$("#d_festivos").hide();
+					$("#sm_datos_empleados").hide();
+					$("#sm_tipo_de_turno").hide();
+					$("#sm_dia_y_hora").hide();
+					$("#sm_turnos").hide();
+					$("#sm_nomina").show();
+					$("#sm_informes").hide();
+					$("#sm_festivos").hide();
+				});
+				$("#li_informes").click(function(){
+					$("#d_inicio").hide();
+					$("#sm_inicio").hide();
+					$("#d_login").hide();
+					$("#sm_login").hide();
+					$("#d_datos_empresa").hide();
+					$("#sm_datos_empresa").hide();
+					$("#d_datos_empleados").hide();
+					$("#d_tipo_de_turno").hide();
+					$("#d_dia_y_hora").hide();
+					$("#d_turnos").hide();
+					$("#d_nomina").hide();
+					$("#d_informes").show();
+					$("#d_festivos").hide();
+					$("#sm_datos_empleados").hide();
+					$("#sm_tipo_de_turno").hide();
+					$("#sm_dia_y_hora").hide();
+					$("#sm_turnos").hide();
+					$("#sm_nomina").hide();
+					$("#sm_informes").show();
+					$("#sm_festivos").hide();
+				});
+				$("#li_festivos").click(function(){
+					$("#d_inicio").hide();
+					$("#sm_inicio").hide();
+					$("#d_login").hide();
+					$("#sm_login").hide();
+					$("#d_datos_empresa").hide();
+					$("#sm_datos_empresa").hide();
+					$("#d_datos_empleados").hide();
+					$("#d_tipo_de_turno").hide();
+					$("#d_dia_y_hora").hide();
+					$("#d_turnos").hide();
+					$("#d_nomina").hide();
+					$("#d_informes").hide();
+					$("#d_festivos").show();
+					$("#sm_datos_empleados").hide();
+					$("#sm_tipo_de_turno").hide();
+					$("#sm_dia_y_hora").hide();
+					$("#sm_turnos").hide();
+					$("#sm_nomina").hide();
+					$("#sm_informes").hide();
+					$("#sm_festivos").show();
+				});
+				$("#hide").click(function(){
+					$("p").hide();
+				});
+				$("#show").click(function(){
+					$("p").show();
+				});
+			});
+			function 	set_initial_panel(){
+				$("#d_inicio").show();
+				$("#d_login").hide();			
+				$("#d_datos_empresa").hide();
+				$("#d_datos_empleados").hide();
+				$("#d_tipo_de_turno").hide();
+				$("#d_dia_y_hora").hide();
+				$("#d_turnos").hide();
+				$("#d_nomina").hide();
+				$("#d_informes").hide();
+				$("#d_festivos").hide();
+				$("#sm_inicio").show();
+				$("#sm_login").hide();
+				$("#sm_datos_empresa").hide();
+				$("#sm_datos_empleados").hide();
+				$("#sm_tipo_de_turno").hide();
+				$("#sm_dia_y_hora").hide();
+				$("#sm_turnos").hide();
+				$("#sm_nomina").hide();
+				$("#sm_informes").hide();
+				$("#sm_festivos").hide();
+			}
+	</Script>
+	
+  </head>
+  <body>
+
+  <div class="row">
+  <div class="column_menu" >
+  <br>
+    <header>
+    <h1>Gestion de estaciones de servicio</h1>
+	 </header>
+	<br>
+	<div class="caja">
+		<div class="box">
+		<img src="http://localhost/practicas_html/img/gasolinera.jpg">
+		</div>
+	</div>
+	<div class="separador">
+	</div>
+
+	<div class="menu_pantallas">
+		<nav id="menu">
+            <ul>
+				<li><button class="boton" id="li_inicio">Inicio</button></li>
+				<li><button class="boton" id="li_login">Login</button></li>
+				<li><button class="boton" id="li_datos_empresa">Datos empresa</button></li>
+				<li><button class="boton" id="li_datos_empleados">Datos empleados</button></li>
+				<li><button class="boton" id="li_tipo_de_turno">Tipo de turnos</button></li>
+				<li><button class="boton" id="li_dia_y_hora">Días y horas a trabajar</button></li>
+				<li><button class="boton" id="li_turnos">Turnos</button></li>
+				<li><button class="boton" id="li_nomina">Nominas</button></li>
+				<li><button class="boton" id="li_informes">Informes</button></li>
+				<li><button class="boton" id="li_festivos">Festivos</button></li>
+            </ul>
+        </nav>
+	</div>
+
+
+  </div>
+  <div class="column_content">
+	<div class="row_submenu">
+		<div id="sm_inicio">
+			<nav id="submenu">
+				<ul>
+				   <li><button class="boton" id="qs" >¿Quienes somos?</button></li>
+				   <li><button class="boton" id="qh">¿Que hacemos?</button></li>
+				   <li><button class="boton" id="mds">Manual de uso</button></li>
+				   <li><button class="boton" id="h">¿Hablamos?</button></li>
+				   
+				</ul>
+			 </nav>
+		</div>
+		<div id="sm_login"><h2 class="h2_submenu">Login</h2></div>
+			
+		<div id="sm_datos_empresa"><h2 class="h2_submenu">Datos de la empresa</h2></div>
+		<div id="sm_datos_empleados"><h2 class="h2_submenu">Datos de los empleados</h2></div>
+		<div id="sm_tipo_de_turno"><h2 class="h2_submenu">Tipos de turnos</h2></div>
+		<div id="sm_dia_y_hora"><h2 class="h2_submenu">Días y hora por turno y empleado</h2></div>
+		<div id="sm_turnos"><h2 class="h2_submenu">Turnos</h2></div>
+		<div id="sm_nomina"><h2 class="h2_submenu">Nóminas</h2></div>
+		<div id="sm_informes"><h2 class="h2_submenu">Informes</h2></div>
+		<div id="sm_festivos"><h2 class="h2_submenu">Festivos</h2></div>
+	</div>
+
+	<div class="row_content">
+		<div id="d_inicio">
+			<div id="windows_size">
+				<h2>Content</h2>
+				<p>Click the button to display this frame's height and width.</p>
+				<button onclick="myFunction()">Try it</button>
+				<p id="demo"></p>
+				<p>If you click on the "Hide" button, I will disappear.</p>
+
+				<button id="hide">Hide</button>
+				<button id="show">Show</button>
+				<script>
+					function myFunction() {
+					var w = window.innerWidth;
+					var h = window.innerHeight;
+					var orientation = window.orientation;
+					document.getElementById("demo").innerHTML = "Width: " + w + "<br>Height: " + h + "<br>Orientation: " + orientation;
+					}
+
+				</Script>
+				
+			</div>
+			<div id="Quienes_somos">
+				<h2>¿Quienes somos?</h2>
+				<p>Somos una empresa especializada en el diseño y la gestion de turnos para Estaciones de Servicio</p>
+				<p>Estamos hablando de diseñar y ofrecer turnos rotativos, que cumpliendo el convenio, permitan obtener los mayores beneficios tanto para el empleado como para el empleador</p>
+				<p>
+				Los tipos de <strong>turnos rotativos standar</strong>  que planteamos de inicio son:
+				<ul>
+				<li><strong>El turno doble o los dos</strong> <strong>turnos: </strong>que sería un turno de mañana y otro de tarde. En las estaciones de servicio esto incluye fines de semana.</li>
+				<li><strong>Los tres turnos</strong>: mañana, tarde y noche.  En las estaciones de servicio esto incluye fines de semana, en especial si las estaciones están en autovías.</li>
+				</ul>
+				</p>
+				<p>Para conseguir una óptima distribución podemos plantear patrones estandar, <strong>4x2,5x2,3x1,6x2</strong> aunque lo mas recomandable, teniendo el cuenta el convenio de gasolineras, una mezcla de dos o mas de ello para asegurar descansos en domingos y otros puntos del aspectos del convenio</p>
+				<p>Para ello ofrecemos una consultoría inicial, y una herramienta de mediante cálculos permite comprobar cuadrantes anuales y generar documentación para auditorías</p>
+			</div>
+			<div id="que_hacemos">
+				<h2>¿Que hacemos?</h2>
+				<p>Ofrecemos una consultoría inicial, y una herramienta que mediante cálculos permite comprobar cuadrantes anuales y generar documentación para auditorías</p>
+			</div>
+			<div id="manual_uso">
+				<h2>Manual de uso</h2>
+				<p>Este es el manual de uso</p>
+			</div>
+			<div id="hablamos">
+				<h2>Hablemos</h2>
+				<p>Vamos a chatear</p>
+			</div>
+		</div>
+		<div id="d_login"></div>
+		<div id="d_datos_empresa"></div>
+		<div id="d_datos_empleados"></div>
+		<div id="d_tipo_de_turno"></div>
+		<div id="d_dia_y_hora"></div>
+		<div id="d_turnos"></div>
+		<div id="d_nomina"></div>
+		<div id="d_informes"></div>
+		<div id="d_festivos"></div>
+  </div>
+</div>
+<footer>
+      <p>Este es el footer aqui hare los ejemplos del master</p>
+    <p style="font-size: 40px; font-style: italic; color: blue">Comportamiento
+      modificado de p con estilo en linea</p>
+    <p>Comportamiento por defecto de p</p>
+</footer>
+</body>
+
+</html>

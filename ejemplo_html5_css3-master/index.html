@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Ejercicios José Manuel Aroca</title>
+	<link rel="stylesheet" href="style6.css" />
+ <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+	
+ </head>
+  <body>
+    <div id="main_wrapper">
+      <header>
+        <div id="main_title"> <img src="images/logo.png"  id="logo">
+          <h1 id ="principal" >José Manuel Aroca</h1>
+          <h2>Ejercicios curso HTML5 </h2>
+        </div>
+        <nav id="menu">
+          <ul id="lista">
+            <li><a href="#listas">Listas</a></li>
+			<br>
+            <li style="margin-left: 20px;"><a href="#listas_ej_1">Listas
+                ejercicio 1</a></li>
+			<br>
+            <li style="margin-left: 20px;"><a href="#listas_ej_2">Listas
+                ejercicio 2</a></li>
+			<br>
+            <li><a href="#tablas">Tablas</a></li><br>
+            <li style="margin-left: 20px;"><a href="#tablas_ej_1">Tablas
+                ejercicio 1</a></li><br>
+            <li style="margin-left: 20px;"><a href="#tablas_ej_2">Tablas
+                ejercicio 2</a></li><br>
+            <li style="margin-left: 20px;"><a href="#tablas_ej_3">Tablas
+                ejercicio 3</a></li><br>
+            <li><a href="#formulario">Formulario</a></li><br>
+			<li><a href="#csspruebas">Pruebas css</a></li><br>
+			<li><a href="#formulario11">Formulario ejercicio 11</a></li><br>
+			<li id ="opt_modificar"><a  href="#modificartexto">Modificar texto</a></li><br>
+          </ul>
+        </nav>
+      </header>
+	  	<script>
+			$(document).ready(function()
+			{
+				var text = "Formulario de prueba de HTML5";
+				
+				$("#menu > #lista > #opt_modificar > a").click(function() {    
+				$('#principal').html(text ); 
+
+			   });
+			 
+			}
+			function scrollToDiv(element){
+				var offset = element.offset();
+				var offsetTop = offset.top;
+				var totalScroll = offsetTop;
+				
+				$('body,html').animate({
+						scrollTop: totalScroll
+				}, 500);
+			}
+			);
+		</script>
+      <div id="banner_image">
+        <div id="banner_description"> Recent articles read <a href="#" class="red_button">See
+            article <img src="images/small_arrow.png" alt=""></a> </div>
+      </div>
+      <section id="listas">
+        <section id="listas_ej_1" style="margin-left: 50px;">
+          <h2><img src="http://localhost/practicas_html/img/ejercicio-html-listas1.jpg" alt="Pregunta" class="ico_pregunta">Este
+            es el ejercicio 1</h2>
+          <p> Resultado </p>
+          <h2> <strong>Listas ordenadas</strong> </h2>
+          <article>
+            <ol start="4" type="a">
+              <li>elemento 1</li>
+              <li>Elemento 2</li>
+              <li>Elemento 3</li>
+              <li>Elemento 4</li>
+            </ol>
+          </article>
+          <article>
+            <ol start="100" reversed="">
+              <li>elemento 1</li>
+              <li>Elemento 2</li>
+              <li>Elemento 3</li>
+              <li>Elemento 4</li>
+            </ol>
+          </article>
+          <article>
+            <ol start="999" type="i">
+              <li>elemento 1</li>
+              <li>Elemento 2</li>
+              <li>Elemento 3</li>
+              <li>Elemento 4</li>
+            </ol>
+          </article>
+        </section>
+        <a href="#main_title">Menu</a>
+        <section id="listas_ej_2" style="margin-left: 50px;">
+
+			<h2><img src="http://localhost/practicas_html/img/ejercicio-html-listas2.jpg" alt="Pregunta" class="ico_pregunta">Este
+            es el ejercicio 2</h2>
+          <p> Resultado </p>
+          <h2> <strong>Listas no ordenadas</strong> </h2>
+          <article>
+            <ul>
+              <li>Elemento 1</li>
+              <li>Elemento 2</li>
+              <li>Elemento 3</li>
+              <li>Elemento 4</li>
+            </ul>
+          </article>
+          <article>
+            <ul class="a" ;>
+              <li>Elemento 1</li>
+              <li>Elemento 2</li>
+              <li>Elemento 3</li>
+              <li>Elemento 4</li>
+            </ul>
+          </article>
+          <article>
+            <ul class="b" ;="">
+              <li>Elemento 1</li>
+              <li>Elemento 2</li>
+              <li>Elemento 3</li>
+              <li>Elemento 4</li>
+            </ul>
+          </article>
+        </section>
+        <a href="#main_title">Menu</a> </section>
+      <section id="tablas">
+        <article id="tablas_ej_1">
+          <h2><img src="images/tabla_html_1.png" alt="Pregunta" class="ico_pregunta">Este
+            es el ejercicio 1</h2>
+          <h2><img src="images/ico_bombilla.png" alt="Solucción " class="ico_categorie">Soluccion</h2>
+          <table border="1">
+            <tbody>
+              <tr>
+                <th>Paises</th>
+                <th>Medallas</th>
+              </tr>
+              <tr>
+                <td>USA</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>China</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>España</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>Francia</td>
+                <td>6</td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="#main_title">Menu</a> </article>
+        <article id="tablas_ej_2">
+          <h2><img src="images/tabla_html_2.png" alt="Pregunta" class="ico_pregunta">Este
+            es el ejercicio 2</h2>
+          <h2><img src="images/ico_bombilla.png" alt="Solucción " class="ico_categorie">Soluccion
+            ejercicio 2</h2>
+          <table border="1">
+            <tbody>
+              <tr>
+                <td>mes</td>
+                <td>enero</td>
+                <td>febrero</td>
+                <td>farzo</td>
+                <td>abril</td>
+                <td>mayo</td>
+                <td>junio</td>
+              </tr>
+              <tr>
+                <td>Pib</td>
+                <td>0.2</td>
+                <td>0.4</td>
+                <td>0.2</td>
+                <td>0.3</td>
+                <td>0.1</td>
+                <td>0.2</td>
+              </tr>
+              <tr>
+                <td>pnb</td>
+                <td>1.3</td>
+                <td>1.2</td>
+                <td>1.1</td>
+                <td>1.9</td>
+                <td>1.7</td>
+                <td>1.6</td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="#main_title">Menu</a> </article>
+        <article id="tablas_ej_3">
+          <h2><img src="images/tabla_html_3.png" alt="Pregunta" class="ico_pregunta">Este
+            es el ejercicio 3</h2>
+          <h2><img src="images/ico_bombilla.png" alt="Solucción " class="ico_categorie">Soluccion
+            ejercicio 3</h2>
+          <table border="1">
+            <tbody>
+              <tr>
+                <td colspan="2">A</td>
+                <td>B</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td rowspan="3">D</td>
+                <td colspan="2">E</td>
+                <td>F</td>
+              </tr>
+              <tr>
+                <td>G</td>
+                <td colspan="2">H</td>
+              </tr>
+              <tr>
+                <td>I</td>
+                <td>J</td>
+                <td>K</td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="#main_title">Menu</a> </article>
+		</section>
+		<section>
+        <main id="formulario">
+          <h2>Este es el ejercicio con formularios <br>
+            <img src="images/formulario.jpg" alt="Pregunta" class="ico_categorie"></h2>
+          <h2><img src="images/ico_bombilla.png" alt="Solucción " class="ico_categorie">Soluccion
+            ejercicio con formularios</h2>
+          <form action="http://algunsitio.com/prog/usuarionuevo" method="post">
+            <p> <label for="nombre">Nombre: </label> <input id="nombre" required=""
+                type="text"> <label for="apellido">Apellidos: </label> <input
+                id="apellido" required="" type="text"> <label for="telefono">Teléfono:
+                </label> <input id="telefono" required="" type="tel"> <br>
+              <label for="dni">DNI: </label> <input id="dni" placeholder="formato 8 cifras y 1 letra"
+                required="" <!--autofocus=""--> type="text"> </p>
+            <p> <label for="email">Email: </label> <input id="email" type="email">
+              <label for="password">Contraseña: </label> <input id="password"
+                pattern=".{6,}" type="password"> <br>
+              <label for="dirurl">Direccion web: </label> <input id="dirurl" required=""
+                type="url"> </p>
+            <p> <label for="perf_prof">Perfil profesional: </label> </p>
+            <p><textarea name="perf_prof" id="perf_prof" placeholder="Describe tu perfil profesional"
+rows="4" cols="90"></textarea></p>
+            <p> <label for="edad">Edad: </label> <input id="edad" type="number">
+              <label for="n_hijos">Nº de hijos : </label> <input id="n_hijos"
+                name="n_hijos" min="0" max="50" value="0" oninput="this.form.n_hijos_input.value=this.value"
+                type="range"> <input name="n_hijos_input" min="0" max="20" value="0"
+                oninput="this.form.n_hijos.value=this.value" type="number"> <output></output>
+              <label for="f_nacimiento">Fecha de nacimiento: </label> <input name="f_nacimiento"
+                id="f_nacimiento" type="date"> </p>
+            <p> <label for="color_ojos">Color de ojos: </label><input id="color_ojos "
+                type="color"> </p>
+            <p> <label for="est_civil_nd">Estado civil (no desplegada) </label>
+              <select name="est_civil_nd" id="est_civil_nd">
+                <option>Soltero</option>
+                <option>Casado</option>
+                <option>Divorciado</option>
+              </select>
+            </p>
+            <p> <label for="est_civil_d">Estado civil (desplegada) </label> <br>
+              <select name="est_civil_d" id="est_civil_d" size="3" multiple="multiple">
+                <option>Soltero</option>
+                <option>Casado</option>
+                <option>Divorciado</option>
+              </select>
+            </p>
+            <section class="c"> Introduce tu sexo: <br>
+              <input id="male" name="gender" value="male" type="radio"> <label
+                for="male">Hombre</label><br>
+              <input id="female" name="gender" value="female" type="radio"> <label
+                for="female">Mujer</label><br>
+              <input id="other" name="gender" value="other" type="radio"> <label
+                for="other">Otros</label> </section>
+            <br>
+            <fieldset> Departamentos por los que has pasado: <br>
+              <input id="contabilidad" name="contabilidad" value="Contabilidad"
+                type="checkbox"> <label for="Contabilidad">Contabilidad</label><br>
+              <input id="almacen" name="almacen" value="Almacen" type="checkbox">
+              <label for="almacen">Almacen</label><br>
+              <input id="ventas" name="ventas" value="Ventas" type="checkbox"> <label
+                for="ventas">Ventas</label> <br>
+              <input id="fiscal" name="fiscal" value="Fiscal" type="checkbox"> <label
+                for="fiscal">Fiscal</label> </fieldset>
+            <br>
+            <section id="Button_area"> <input id="boton_reset" value="Limpiar/Reset"
+type="reset"> <input id="boton_enviar" value="enviar" type="submit"> </section>
+            <a href="#main_title">Menu</a> </form>
+        </main>
+      </section>
+	  <section>
+	   <main id="formulario11">
+          <h2>Este es el ejercicio con formularios <br>
+            <strong>Enunciado:<strong>
+			Crea una página web que contenga un formulario con los siguientes campos de información:<br>
+			<ul>
+              <li>Nombre, con un control de tipo texto obligatorio y con autofoco.</li>
+              <li>Correo electrónico, con un control de tipo email obligatorio.</li>
+              <li>URL, con un control de tipo url que muestre la ayuda "Escribe la URL de tu página web personal".</li>
+              <li>Fecha, con un control de tipo date.</li>
+              <li>Tiempo, con un control de tipo time.</li>
+              <li>Fecha y hora, con un control de tipo datetime.</li>
+              <li>Mes, con un control de tipo month.</li>
+              <li>Semana, con un control de tipo week.</li>
+              <li>Número, con un control de tipo number que limite la entrada a un valor entre -10 y 10.</li>
+              <li>Teléfono, con un control de tipo tel.</li>
+              <li>Término de búsqueda, con un control de tipo search.</li>
+              <li>Color favorito, con un control de tipo color.</li>
+			</ul>
+Además, tienes que tener en cuenta los siguientes requisitos:<br>
+            <ul>
+				<li>El título de la página debe ser Formulario de prueba de HTML5.</li>
+				<li>El método de envío del formulario debe ser GET.</li>
+				<li>El destino del envío del formulario debe ser "".</li>
+			</ul>
+			</h2>
+          <h2><img src="images/ico_bombilla.png" alt="Solucción " class="ico_categorie">Soluccion
+            ejercicio con formularios</h2>
+          <form action="" method="get" >
+				<label for="nombre">Nombre: </label> <input id="nombre" required="" <!--autofocus=""--> type="text"> 
+				<label for="email">Email: </label> <input id="email" type="email">
+				<label for="dirurl">Direccion web: </label> <input id="dirurl"  type="url">
+				<label for="f_nacimiento">Fecha: </label> <input name="f_nacimiento" id="f_nacimiento" type="date"> 
+				<label for="f_nacimiento">Hora: </label> <input name="h_nacimiento" id="h_nacimiento" type="time">
+				<label for="fh_nacimiento">Fecha y hora: </label> <input name="fh_nacimiento" id="fh_nacimiento" type="datetime">
+				<label for="m_nacimiento">Mes: </label> <input name="m_nacimiento" id="m_nacimiento" type="month"> 
+				
+				<label for="s_nacimiento">Semana: </label> <input name="s_nacimiento" id="s_nacimiento" type="week"> 
+
+				<label for="n_hijos">Número : </label> 
+						<input id="n_value" name="n_value" min="-10" max="10" value="0" oninput="this.form.n_value_input.value=this.value" type="range">
+						<input name="n_value_input" min="-10" max="10" value="0" oninput="this.form.n_value.value=this.value" type="number"> 
+						<output></output>
+				<label for="telefono">Teléfono:</label> <input id="telefono"  type="tel"> <br>
+
+				<label for="site-search">Busqueda:</label>
+				<input type="search" id="site-search" name="q" aria-label="Search through site content">
+				<button>Search</button>
+
+				<label for="color_favorito">Color favorito: </label><input id="color_favorito" type="color"> 
+
+            
+            <section id="Button_area"> <input id="boton_reset" value="Limpiar/Reset" type="reset"> <input id="boton_enviar" value="enviar" type="submit"> </section>
+            <a href="#main_title">Menu</a> </form>
+        </main>
+      </section>
+	  <section id="modificartexto">
+		<h2> Ejemplo de como modificar texto en la página> </h2>
+		<div>
+		<div id="part4">
+			<h2>4: Link and Title Attribute Demo</h2>
+
+			<a href="#" id="linkTitle" title="This is text from the title attribute, wrapped in a span tag, placed here by jquery.">
+			Hover over this text</a> 
+		</div>
+		<script>
+		 $(document).ready(function()
+    {
+        var text = $('#principal').text();
+        $("#part4 > a").mouseover(function() {                    
+        $(this).html(text + $(this).attr('title')); 
+       });
+       $("#part4 > a").mouseout(function() {
+         $(this).empty().append(text); 
+       });
+    });
+		</script>
+		<h2 onclick="alert(this.nodeName)">Haz click aquí para ver el nodeName de this</h2>
+		<h2 onclick="alert(this.nodeName)">Haz click <span style="color:blue;">aquí para ver el nodeName de this</span></h2>
+		<h2>Haz click <span onclick="alert(this.nodeName)" style="color:red;">aquí para ver el nodeName de this</span></h2>
+		<h2 onclick="alert(this.firstChild.nodeName)">Haz click aquí para ver el nodeName del hijo de h2</h2>
+		<h2 onclick="this.firstChild.nodeValue='Aaaaaaah!'">Haz click aquí para modificar el texto en el hijo del nodo h2 usando NodeValue</h2>
+		<h2 onclick="this.textContent='Eeeeeeeh!'">Haz click aquí para modificar el texto en hijo derivado del nodo h2 usando textContent</h2>
+		<h2 onclick="this.innerHTML='Siiiiiih!'">Haz click aquí para modificar el texto con innerHTML del nodo h2</h2>
+		<h2 onclick="alert('Contenido innerHTML actual es: '+this.innerHTML);
+		 this.innerHTML='<div style=\' width:50%; border-style:solid; background-color: #FF7F50;  \'>Ahamham!</div>'">
+		Haz click aquí para modificar el código con innerHTML del nodo h2</h2>
+		<h2 onclick="this.textContent='Uuuuuuh!">Haz click <span style="color:blue;">pero no existe un textContent modificable</span></h2>
+		<h2 onclick="alert('Obtenemos: '+this.textContent)">Haz click <span style="color:blue;">para ver el textContent</span> y verás</h2>
+		<h2 onclick="this.firstChild.innerHTML='No podemos'">Si intentamos modificar un nodo texto con innerHTML...</h2>
+		</div>
+	  </section>
+	  <section id="csspruebas">
+		<h2>Este es el ejercicio con formatos css <br>
+            <img src="images/css.png" alt="Pregunta" class="ico_pregunta"></h2>
+          <h2><img src="images/ico_bombilla.png" alt="Solucción " class="ico_categorie">Pruebas con formatos css</h2>
+		  <p>
+			<h3>
+				Ejemplo de estilos en linea
+			</h3>
+			Una de las técnicas más simples para incorporar estilos CSS a un documento HTML es la de asignar los estilos dentro de
+las etiquetas por medio del atributo style.
+			
+			<hr>
+			<p> Mi texto con tamaño por defecto</p>
+			<hr>
+			<p style="font-size: 20px">Mi texto con tamaño 20px</p>
+			<hr>
+			<p style="font-size: 40px">Mi texto con tamaño 40px</p>
+			<hr>
+			<p style="font-size: 20px; color:#FF0000; ">Mi texto con tamaño 20px color rojo</p>
+			<hr>
+			<p style="font-size: 40px; color:#34b33e; font-style: italic">Mi texto con tamaño 40px verde italica</p>
+			<hr>
+			<p class="c">Mi texto con tamaño 40px amarillo italica con formato en pestaña &lt;style&gt; </p>
+			<hr>
+		  </p>
+	  </section>
+      <aside>
+        <h1>About the author</h1>
+        <img src="images/arrow.png" alt="" id="arrow">
+        <p id="zozor_picture"><img src="images/zonor.png" alt="Zozor Picture"></p>
+        <p>Let me introduce myself: My name's José Manuel Aroca. I was born on
+          28 May 1972.</p>
+        <p>My linkedin profile is <a href="https://www.linkedin.com/in/josemanuelaroca/">
+            linkedin profile</a> .</p>
+        <p><img src="images/facebook.png" alt="Facebook"><img src="images/twitter.png"
+            alt="Twitter"><img src="images/vimeo.png" alt="Vimeo"><img src="images/flickr.png"
+            alt="Flickr"><img src="images/rss.png" alt="RSS"></p>
+      </aside>
+      <footer>
+        <div id="tweet">
+          <h1>My last tweet</h1>
+          <p>Hee-haw!</p>
+          <p>12/05 23:12</p>
+        </div>
+        <div id="my_pictures">
+          <h1>My pictures</h1>
+          <p><img src="images/pic1.jpg" alt="Picture"><img src="images/pic2.jpg"
+              alt="Picture"><img src="images/pic3.jpg" alt="Picture"><img src="images/pic4.jpg"
+              alt="Picture"></p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
