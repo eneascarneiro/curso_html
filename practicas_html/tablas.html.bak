@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+	table, th, td {
+	  border: 5px solid black;
+	  border-collapse: collapse;
+	}
+	th, td {
+	  padding: 5px;
+	  text-align: left;
+	}
+	</style>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+  </head>
+  <body>
+    <h1 id = "inicio"> Ejemplos tablas html </h1>
+    <p><br>
+         <figure><figcaption>Comienza la parte de tablas</figcaption> <img src="https://desarrolladoresweb.org/wp-content/uploads/Como-hacer-Tablas-en-html.jpg">  <br>
+        </figure>
+        <br>
+        <section>
+        <h2> Ejemplo tabla normal </h2>
+	<table >
+	  <caption> Cabecera de tabla </caption>
+	  <tbody>
+		  <tr>
+		    <th>Group field</th>
+		    <th>Firstname</th>
+		    <th>Lastname</th>
+		    <th>Age</th>
+		  </tr>
+		  <tr>
+		    <th rowspan="2" >Jill_res </th>
+		    <td>Jill</td>
+		    <td>Smith</td>
+		    <td>50</td>
+		  </tr>
+		  <tr>
+		    <th colspan="2"> yy</th>
+		    <td>Eve</td>
+		    <td>Jackson</td>
+		    <td>94</td>
+		  </tr>
+		  <tr>
+		   <th rowspan="1" >Otros </th>
+		    <td>Pepe</td>
+		    <td>&nbsp;</td>
+		    <td>94</td>
+		  </tr>
+	    </tbody>
+	</table>
+	</section>
+	
+	        <br>
+        <section>
+        <h2> Ejemplo 2 tabla estructurada </h2>
+	<table >
+	  <caption> Cabecera de tabla </caption>
+	  <thead>
+	  	<tr>
+		    <th>Group field</th>
+		    <th>Firstname</th>
+		    <th>Lastname</th>
+		    <th>Age</th>
+		    <th>Eyes color</th>
+		</tr>
+	  </thead>
+	  <tfoot>
+	  <td colspan="3" >Edad media</td>
+	  <td> 95 </td>
+	  </tfoot>
+	  <tbody>
+		  
+		  <tr>
+		    <th rowspan="2" >Jill_res </th>
+		    <td>Jill</td>
+		    <td>Smith</td>
+		    <td>50</td>
+		    <td>Blue</td>
+		  </tr>
+		  <tr>
+		    <td>Eve</td>
+		    <td>Jackson</td>
+		    <td>94</td>
+		    <td>Blue</td>
+		  </tr>
+		  <tr>
+		   <th rowspan="3" >Otros </th>
+		    <td>Luiso</td>
+		    <td>Perez</td>
+		    <td>94</td>
+		    <td>Blue</td>
+		  </tr>
+		  <tr>
+		  
+		    <td>luis</td>
+		    <td>Perez</td>
+		    <td>94</td>
+		    <td>Green</td>
+		  </tr>
+		  <tr>
+		  
+		    <td>Luisito</td>
+		    <td>Pepon</td>
+		    <td>94</td>
+		    <td>Green</td>
+		  </tr>
+		  		  <tr>
+		   <th rowspan="3" >Otras </th>
+		    <td>Luisa</td>
+		    <td>Perez</td>
+		    <td>94</td>
+		    <td>Green</td>
+		  </tr>
+		  <tr>
+		  
+		    <td>luisas</td>
+		    <td>Perez</td>
+		    <td>94</td>
+		    <td>black</td>
+		  </tr>
+		  <tr>
+		  
+		    <td>Luisitas</td>
+		    <td>Pepon</td>
+		    <td>94</td>
+		    <td>black</td>
+		  </tr>
+		  <tr>
+		   <th rowspan="3" >Otros </th>
+		    <td>Luiso</td>
+		    <td>Perez</td>
+		    <td>94</td>
+		    <td>black</td>
+		  </tr>
+		  <tr>
+		  
+		    <td>luis</td>
+		    <td>Perez</td>
+		    <td>94</td>
+		    <td>black</td>
+		  </tr>
+		  <tr>
+		  
+		    <td>Luisito</td>
+		    <td>Pepon</td>
+		    <td>94</td>
+		    <td>black</td>
+		  </tr>
+		  		  <tr>
+		  
+		    <td colspan="4" >....</td>
+		
+		  </tr>
+		  		  <tr>
+		   <th rowspan="3" >Otras </th>
+		    <td>Luisa</td>
+		    <td>Perez</td>
+		    <td>94</td>
+		    <td>grey</td>
+		  </tr>
+		  <tr>
+		  
+		    <td>luisas</td>
+		    <td>Perez</td>
+		    <td>94</td>
+		    <td>grey</td>
+		  </tr>
+		  <tr>
+		  
+		    <td>Luisitas</td>
+		    <td>Pepon</td>
+		    <td>94</td>
+		   		    <td>grey</td>
+		  </tr>
+	    </tbody>
+	</table>
+	</section>
+	
+	<br>
+	<br>
+	<br>
+	<br>
+    <a href="http://localhost/practicas_html/Prueba%20html%201.html" target="_self"><figcaption>Comienza la parte de tablas</figcaption><img src="https://juanromera.com/wp-content/uploads/2019/09/01-1.jpg"/></a>
+    
+    
+    </p>
+  </body>
+</html>
